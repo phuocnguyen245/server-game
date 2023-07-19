@@ -9,8 +9,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon ./src/server.ts --exec",
-    "postinstall": "npx prisma generate",
-    "build": "npx prisma generate && nodemon ./src/server.ts --exec"
+    "postinstall": "npx prisma generate"
   },
   "author": "",
   "license": "ISC",
