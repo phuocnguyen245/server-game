@@ -70,9 +70,10 @@ export const getAllUsers = async (req: Request, res: Response) => {
     });
   } catch (error) {
     console.error("Error retrieving users:", error);
-    res
-      .status(500)
-      .json({ error: "An error occurred while retrieving users." });
+    res.status(500).json({
+      error: "An error occurred while retrieving users.",
+      message: error,
+    });
   }
 };
 
