@@ -1,7 +1,7 @@
 import express from "express";
-import currencyRouter from "./currency.js";
-import roleRouter from "./role.js";
-import userRouter from "./user.js";
+import currencyRouter from "./currency.ts";
+import roleRouter from "./role.ts";
+import userRouter from "./user.ts";
 
 const router = express.Router();
 
